@@ -42,7 +42,7 @@ public class TestBase {
 			driver = new RemoteWebDriver(hubUrl, cap);
 		} else {
 			if (browser.equals("chrome")) {
-				System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "/src/test/resources/chromedriver");
 				driver = new ChromeDriver();
 
 			} else if (browser.equals("firefox")) {
