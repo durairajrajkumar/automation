@@ -16,7 +16,7 @@ pipeline {
 				checkout scm
 				
 				script{
-					bat(/mvn clean  test /)
+					sh(/mvn clean  test /)
 				}
 				
 				step([$class : 'Publisher', reportFilenamePattern : '**/testng-results.xml'])
@@ -25,7 +25,7 @@ pipeline {
 		
 		stage("Email"){
 			steps{
-				emailext (to: 'bharath.selenium26@gmail.com', replyTo: 'bharath.selenium26@gmail.com', subject: "Email Report from - '${env.JOB_NAME}' ", body: readFile("target/surefire-reports/emailable-report.html"), mimeType: 'text/html');
+				emailext (to: 'deepak2717@gmail.com', replyTo: 'deepak2717@gmail.com', subject: "Email Report from - '${env.JOB_NAME}' ", body: readFile("target/surefire-reports/emailable-report.html"), mimeType: 'text/html');
 			}
 		}
 	}
