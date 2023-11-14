@@ -69,13 +69,13 @@
 		<dependency>
 			<groupId>de.openkeyword</groupId>
 			<artifactId>autoit</artifactId>
-			<version>0.1.31</version>
+			<version>0.2.14</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.9.9</version>
+			<version>2.9.9.2</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
